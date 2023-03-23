@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="Jess & JC's Wedding Website" content="Jess & JC's Wedding Website">
+<meta name="google-site-verification" content="" />
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" href="css/style.css" />
+
+	<title> Jess & JC's Wedding Website </title>
+</head>
+
+<body class='container'>
+	<section class="section section-main">
+		<div class="row u-half-row">
+
+			<div class="u-half-row-verticle-center-text-center ">
+				<span class="heading-primary--main">Jess & JC</span>
+				<div class="background--floral"></div>
+
+				<span class="heading-primary--sub">25 Marzo<span style="letter-spacing: 0"><sup
+							id="th"></sup></span> 2023</span>
+
+
+				<ul class="nav">
+					<div class="nav-half">
+
+						<li>
+							<a href="#section-travel" class="newbtn btn-from-bottom"> Detalles</a>
+
+						</li>
+						
+					</div>
+					<div class="nav-half">
+						
+
+						<li>
+
+							<a rel="noopener" href="whatsapp://7223710112" class="newbtn btn-from-bottom">
+								Contacto</a>
+						</li>
+
+					</div>
+
+				</ul>
+
+
+
+				<img id="us" src="img/me.jpg">
+				<a href="img/me.jpg">HOLA</a>
+
+			</div>
+		</div>
+	</section>
+	<section class="section section-details" id="section-travel">
+		<div class="text-box">
+
+			<h1>Ceremonia Civil</h1>
+			<h2>Registro Civil #51</h2>
+			<h3><strong>Fecha: </strong>Sabado 25 Marzo, 2023</h3>
+			<h3><strong>Hora: </strong>9:30 AM</h3>
+			<h3><strong>Dirección: </strong>2TODO</h3>
+			<h3><strong>Link: </strong><a rel="noopener" href="url">TODO</a></h3>
+			<a rel="noopener"
+				href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1544032508326&key=GRP&app=resvlink"
+				class="newbtn btn-from-left newbtn__border">¿Cómo llegar? &rarr;</a>
+
+
+		</div>
+		<div class="text-box">
+			<h1>Fiesta</h1>
+			<h2>Restaurante Los Almendros</h2>
+			<h3><strong>Dirección: </strong>Insurgentes Sur #1759, Col. Guadalupe Inn, CP 01020</h3>
+			<h3><strong>Teléfono </strong><a rel="noopener" href="tel:56-63-51-51">56-63-51-51</a> </h3>
+			<h3><strong>Menú</strong>Thursday, August 29th 2019</h3>
+			<h3><strong>Link </strong><a rel="noopener" href="tel:847-429-0300">847-429-0300</a> </h3>
+
+			<a rel="noopener"
+				href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1544032508326&key=GRP&app=resvlink"
+				class="newbtn btn-from-left newbtn__border">¿Cómo llegar? &rarr;</a>
+
+		</div>
+
+
+
+	</section>
+	
+
+
+	<!-- Return to Top -->
+	<a href="javascript:" id="return-to-top">
+		<i class="fas fa-chevron-up"></i>
+	</a>
+	<!-- Test the scroll -->
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		// Add smooth scrolling to all links
+		$("a").on('click', function (event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 0, function () {
+
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+
+				});
+			} // End if
+		});
+	});
+</script>
+<script>
+	// ===== Scroll to Top ==== 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200); // Fade in the arrow
+		} else {
+			$('#return-to-top').fadeOut(200); // Else fade out the arrow
+		}
+	});
+	$('#return-to-top').click(function () { // When arrow is clicked
+		$('body,html').animate({
+			scrollTop: 0 // Scroll to top of body
+		}, 0);
+	});
+</script>
+
+</html>
