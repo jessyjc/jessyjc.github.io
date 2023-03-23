@@ -27,20 +27,6 @@ footer {
   }
 }
 
-#us {
-  margin-top: 2vh;
-  margin-bottom: 25vh;
-  max-width: 65%;
-  border-radius: 1.5rem;
-  opacity: 0;
-  animation: moveInTop 1s ease-out;
-  animation-fill-mode: forwards;
-
-  @media (max-width: 768px) {
-    max-width: 95%;
-  }
-}
-
 .nav {
   animation: moveInLeft 1s ease-out;
   margin-top: $margin-top-small;
